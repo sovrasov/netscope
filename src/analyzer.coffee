@@ -53,7 +53,7 @@ module.exports =
                     #-- none
                     d.mem.activation = d.wOut*d.hOut*d.chOut*d.batchOut
 
-                when "convolution"
+                when "convolution", "convolutiondepthwise"
                     #dimensions
                     params   = n.attribs.convolution_param
                     kernel_w = params.kernel_w ? params.kernel_size
